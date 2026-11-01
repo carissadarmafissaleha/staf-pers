@@ -1,0 +1,28 @@
+# Dependencies & environment
+node_modules/
+kantor-virtual/node_modules/
+kantor-virtual/.venv/
+.venv/
+
+# Build & runtime artifacts
+kantor-virtual/out/
+*.log
+
+# Keep hasil and master-dokumen folders, but ignore all documents inside them
+hasil/*
+!hasil/.gitkeep
+
+master-dokumen/*
+!master-dokumen/.gitkeep
+
+# Ignore all files in nominatif except convert_nominatif.py
+nominatif/*
+!nominatif/convert_nominatif.py
+
+# System & editor metadata
+.DS_Store
+Thumbs.db
+*.tmp
+.claude/
+kantor-virtual/.claude/
+.agent-office/
